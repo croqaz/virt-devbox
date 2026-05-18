@@ -9,7 +9,7 @@ RUN echo "Europe/London" > /etc/timezone
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     automake \
-    binfmt-support \
+    bubblewrap \
     build-essential \
     bzip2 \
     ca-certificates \
@@ -18,6 +18,7 @@ RUN apt-get update && \
     coreutils \
     curl \
     direnv \
+    fd-find \
     git \
     gnupg \
     gzip \
@@ -30,10 +31,14 @@ RUN apt-get update && \
     patch \
     pinentry-tty \
     pkg-config \
+    ripgrep \
+    socat \
     tar \
     tzdata \
+    ufw \
     unzip \
     wget \
+    xxd \
     xz-utils \
     zip \
     zsh
